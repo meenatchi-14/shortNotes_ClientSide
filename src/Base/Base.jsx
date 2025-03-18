@@ -16,7 +16,7 @@ return(
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
-            onClick={()=>navigate("/")}
+            onClick={()=>navigate("/home")}
           >
             Home
           
@@ -24,7 +24,7 @@ return(
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Short Notes
           </Typography>
-          <Button color="inherit" onClick={()=>navigate("/register")}>
+          <Button color="inherit" onClick={()=>navigate("/")}>
             Login/signup</Button>
           <Button color="inherit" onClick={()=>navigate("/profile")}>Profile</Button>
           <Button color="inherit">Logout</Button>

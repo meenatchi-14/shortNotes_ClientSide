@@ -40,12 +40,12 @@ const Signup=()=> {
     setValue(newValue);
   };
 return( 
- <Base title={"Register Page"}>
-  <Box sx={{ width: '100%' }}>
+ <Base>
+  <Box sx={{ width: '100%' }} >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
+        <Tabs value={value} onChange={handleChange} >
+          <Tab label="Login" {...a11yProps(0)} />
+          <Tab label="SignUp" {...a11yProps(1)} />
          
         </Tabs>
       </Box>

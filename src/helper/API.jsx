@@ -1,2 +1,2 @@
-export const BaseUserAPI="http://localhost:9011/app/user";
-export const BaseNotesAPI="http://localhost:9011/app/notes";
+export const BaseUserAPI="https://shortnotes-backend-r8k5.onrender.com/user";
+export const BaseNotesAPI="https://shortnotes-backend-r8k5.onrender.com/notes";
