@@ -12,8 +12,8 @@ function App() {
   return (
     <>
      <Routes>
-     <Route exact path="/home" element={<DashBoard/>}/>
-     <Route path="/"element={<Signup/>}/>
+     <Route path="/home" element={<DashBoard/>}/>
+     <Route exact path="/register"element={<Signup/>}/>
      <Route path="/profile" element={<Profile/>}/>
      <Route path="/user/add" element={<AddPage/>}/>
      <Route path="/user/edit/:id" element={<EditPage/>}/>

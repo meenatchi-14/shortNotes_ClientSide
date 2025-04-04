@@ -7,7 +7,7 @@ const NotesCtx=createContext(null);
 const AppProvider=({children})=>{
     const navigate=useNavigate();
     useEffect(()=>{
-        if(!localStorage.getItem("token")){
+        if(localStorage.getItem("token")){
             navigate("/register",{replace:true});
         }
     },[navigate]);
