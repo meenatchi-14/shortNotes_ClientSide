@@ -24,7 +24,7 @@ return(
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Short Notes
           </Typography>
-          <Button color="inherit" onClick={()=>navigate("/")}>
+          <Button color="inherit" onClick={()=>navigate("/register")}>
             Login/signup</Button>
           <Button color="inherit" onClick={()=>navigate("/profile")}>Profile</Button>
           <Button color="inherit">Logout</Button>

@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
-import { useContext, useEffect } from "react";
-import { createContext } from "react";
+import { useContext, useEffect ,createContext} from "react";
 import { useNavigate } from "react-router-dom";
 
 const NotesCtx=createContext(null);
 const AppProvider=({children})=>{
     const navigate=useNavigate();
     useEffect(()=>{
-        if(localStorage.getItem("token")){
+        if(!localStorage.getItem("token")){
             navigate("/register",{replace:true});
         }
     },[navigate]);
