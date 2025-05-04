@@ -1,7 +1,134 @@
+
 .forms{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+   gap: 2rem;
+}
+.register{
+  position:fixed;
+  color: aliceblue;
+  z-index: 3;
+  top: 60%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 25%;
+  padding: 70px 30px 44px;
+  border-radius: 22px;
+  background:radial-gradient(circle,hwb(104 23% 10%),#83d378);
+  text-align: center;
+}
+#outlined-basic{
+  color: hwb(0 4% 96%);
+  font-size: larger;
+  font-weight:500;
+}
+.signup{
+display: flex;
+position:relative;
+  display: flex;
+  margin: 70px;
+  padding: 10px;
+  width: 15%;
+  margin-left: 42%;
+  border-radius: 20px;
+  background-color: rgb(120, 225, 134);
+}
+.tab{
+  font-size: larger !important;
+  font-weight: bolder !important;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  margin: 70px 10px 0px 10px;
+  border-radius: 20px;
+   gap: 1rem;
+  }
+  .paper{
+    padding: 10px;
+  }
+  .title{
+    color: hsl(236, 85%, 54%) !important;
+  }
+  .write{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 75%, 58%);
+    align-items: end;
+    margin: 5px;
+  }
+  .name{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 3px;
+  }
+  .profile{
+    display: flex;
+    flex-direction: row;
+     gap: 1rem;
+    }
+  .profile-add{
+    display: flex;
+    flex-direction: column;
+    margin-top:80px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .card{
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .add{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(234, 193, 119, 0.942);
+    font-size: medium;
+  }
+  .edit{
+    background-color: rgb(234, 234, 147);
+    padding:5px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .delete{
+    background-color: rgb(250, 55, 45);
+    padding:5px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+@media only screen and (min-width: 325px) and (max-width: 450px) {
+  .signup{
+    width: 40%;
+    margin-left: 28%;
+  }
+  .register{
+    position: fixed;
+    translate: -50% -50%;
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    background:radial-gradient(circle,hwb(104 23% 10%),#83d378);
+    text-align: center;
+  }
+  .btn{
+    font-size: 11px !important;
+    padding:0 !important;
+    margin: 0 !important;
+  
+  }
+  .heading{
+    font-size: 20px !important;
+    font-weight: 550 !important;
+  }
+  .main{ 
+    font-size: 16px !important;
+  }
+  .tab{
+    font-size:small !important;
+    font-weight:lighter !important;
+  }
 }

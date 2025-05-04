@@ -8,18 +8,16 @@ import EditPage from './pages/EditPage'
 import Signup from './pages/Signup'
 
 function App() {
-  
   return (
-    <>
-     <Routes>
-     <Route exact path="/register" element={<Signup/>}/>
-     <Route path="/home" element={<DashBoard/>}/>
+     <Routes >
+     <Route expect path="/" element={<Signup/>}/>
+     <Route path="/Home" element={<DashBoard/>}/>
      <Route path="/profile" element={<Profile/>}/>
      <Route path="/user/add" element={<AddPage/>}/>
      <Route path="/user/edit/:id" element={<EditPage/>}/>
       
      </Routes>
-    </>
+     
   )
 }
 

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useContext, useEffect ,createContext} from "react";
+import { useContext, useEffect ,createContext, useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 const NotesCtx=createContext(null);
@@ -7,12 +7,13 @@ const AppProvider=({children})=>{
     const navigate=useNavigate();
     useEffect(()=>{
         if(!localStorage.getItem("token")){
-            navigate("/register",{replace:true});
+            navigate("/",{replace:true});
         }
     },[navigate]);
+    const[token,setToken]=useState("")
     return(
         <div>
-       <NotesCtx.Provider value={{}}>{children}</NotesCtx.Provider>
+       <NotesCtx.Provider value={{token,setToken}}>{children}</NotesCtx.Provider>
         </div>
     )
 }
